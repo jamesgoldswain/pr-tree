@@ -1,0 +1,13 @@
+#timesheet-details { width: 100% !important}
+td.project { width: 1000px !important;}
+.project input{ width: 1000px !important;}
+
+#tree { float: left; overflow: auto; height: 100%; min-height: 200px; width: auto; min-width: 200px;}
+
+#files { float: left; max-width: 98%;}
+
+.file { display: none;}
+
+.navigation { border: 1px solid #ddd; background-color: #fafbfc; height: 100%; text-align: center; padding: 2px;}
+.container { width: auto !important; }
+#hiddentree { display: none; float: left; width:2%; }

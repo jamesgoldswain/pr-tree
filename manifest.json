@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Wideboy",
+  "description": "This extension shows a treeview for github and gitlab pr/mrs",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "https://code.jquery.com/jquery-1.10.2.js",
+    "https://code.jquery.com/ui/1.11.4/jquery-ui.js"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*/files","http://gitlab.rwwa.com.au/rwwa/tabtouch-mobi/merge_requests/*/diffs"],
+      "css": ["wideboy.css", "treeview.css"],
+      "js": ["jquery.min.js", "jquery-ui.min.js", "popup.js","treeview.js"]
+    }
+  ]
+}
