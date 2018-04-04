@@ -8,13 +8,15 @@ $(function() {
         console.log(mutations);
      });
 	
-    // configuration of the observer:
-    var config = { attributes: true, childList: true, characterData: true };
-    var pageCount = 0;
-    var site = $("meta[property='og:site_name']").attr("content").toLowerCase();
-    var files = [];
-    var fileTree = [];
-    var fileTreeStructure = [];
+    	// configuration of the observer:
+	var config = { attributes: true, childList: true, characterData: true };
+	var pageCount = 0;
+	var site = $("meta[property='og:site_name']").attr("content").toLowerCase();
+	var files = [];
+	var fileTree = [];
+	var fileTreeStructure = [];
+	var tree = {};
+	var final = [];
 
 		var getKids = function(data) {
 				var arr = [];
@@ -78,9 +80,6 @@ $(function() {
 									break;
 							default: buildGitHubData(data)
 					}
-
-					var tree = {};
-					var final = [];
 
 					data.map(addnode);
 
