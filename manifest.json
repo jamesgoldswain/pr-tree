@@ -17,7 +17,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://github.com/*/*/pull/*/files","http://gitlab.rwwa.com.au/rwwa/tabtouch-mobi/merge_requests/*/diffs"],
+      "matches": ["https://*/*/*/pull/*/files","http://*/*/*/merge_requests/*/diffs"],
       "css": ["wideboy.css", "treeview.css"],
       "js": ["jquery.min.js", "jquery-ui.min.js", "popup.js","treeview.js"]
     }
