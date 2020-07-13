@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Wideboy",
-  "description": "This extension shows a treeview for github and gitlab pr/mrs",
+  "name": "PR Tree",
+  "description": "BETA - This extension shows a treeview for github and gitlab pr/mrs",
   "version": "1.0",
 
   "browser_action": {
